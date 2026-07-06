@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meter One | Reflected Light Meter Support</title>
+    <meta
+      name="description"
+      content="Meter One support hub and privacy information for a private, on-device reflected light meter for analog photographers."
+    >
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Meter One home">
+        <span class="brand-glyph" aria-hidden="true"></span>
+        <span>
+          <span class="brand-title">METER ONE</span>
+          <span class="brand-subtitle">Reflected light meter</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="#contact" data-email-link>Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Analog exposure support</p>
+          <h1>Meter One</h1>
+          <p class="hero-subtitle">A private, on-device reflected light meter for analog photographers.</p>
+          <p class="hero-body">
+            Meter One helps translate live reflected-light readings into practical shutter, aperture,
+            and ISO settings for manual and vintage film cameras.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="support.html">Get Support</a>
+            <a class="button button-secondary" href="privacy.html">Privacy Policy</a>
+          </div>
+          <ul class="trust-badges" aria-label="Privacy and product traits">
+            <li>No account</li>
+            <li>No ads</li>
+            <li>No tracking</li>
+            <li>On-device metering</li>
+          </ul>
+        </div>
+
+        <div class="meter-card" aria-label="Decorative analog exposure meter">
+          <div class="meter-topline">
+            <span>REFLECTED</span>
+            <span>LIVE</span>
+          </div>
+          <svg class="meter-svg" viewBox="0 0 440 380" role="img" aria-labelledby="meter-title meter-desc">
+            <title id="meter-title">Analog exposure meter dial</title>
+            <desc id="meter-desc">
+              A decorative graphite exposure dial with cream scale markings and a muted red pointer.
+            </desc>
+            <defs>
+              <linearGradient id="dialShade" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#2b261f"></stop>
+                <stop offset="1" stop-color="#151310"></stop>
+              </linearGradient>
+              <filter id="softInset" x="-20%" y="-20%" width="140%" height="140%">
+                <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.35"></feDropShadow>
+              </filter>
+            </defs>
+
+            <circle cx="220" cy="205" r="164" fill="url(#dialShade)" stroke="rgba(242,232,208,0.12)" stroke-width="2" filter="url(#softInset)"></circle>
+            <circle cx="220" cy="205" r="126" fill="none" stroke="rgba(242,232,208,0.10)" stroke-width="1"></circle>
+            <path class="dial-arc" d="M 80 245 A 152 152 0 0 1 360 245"></path>
+            <path class="dial-arc dial-arc-inner" d="M 110 245 A 122 122 0 0 1 330 245"></path>
+
+            <g class="dial-ticks" aria-hidden="true">
+              <line x1="220" y1="49" x2="220" y2="76" transform="rotate(-118 220 205)"></line>
+              <line x1="220" y1="55" x2="220" y2="74" transform="rotate(-104 220 205)"></line>
+              <line x1="220" y1="49" x2="220" y2="76" transform="rotate(-90 220 205)"></line>
+              <line x1="220" y1="55" x2="220" y2="74" transform="rotate(-76 220 205)"></line>
+              <line x1="220" y1="49" x2="220" y2="76" transform="rotate(-62 220 205)"></line>
+              <line x1="220" y1="55" x2="220" y2="74" transform="rotate(-48 220 205)"></line>
+              <line x1="220" y1="49" x2="220" y2="76" transform="rotate(-34 220 205)"></line>
+              <line x1="220" y1="55" x2="220" y2="74" transform="rotate(-20 220 205)"></line>
+              <line x1="220" y1="49" x2="220" y2="76" transform="rotate(-6 220 205)"></line>
+              <line x1="220" y1="55" x2="220" y2="74" transform="rotate(8 220 205)"></line>
+              <line x1="220" y1="49" x2="220" y2="76" transform="rotate(22 220 205)"></line>
+              <line x1="220" y1="55" x2="220" y2="74" transform="rotate(36 220 205)"></line>
+              <line x1="220" y1="49" x2="220" y2="76" transform="rotate(50 220 205)"></line>
+              <line x1="220" y1="55" x2="220" y2="74" transform="rotate(64 220 205)"></line>
+              <line x1="220" y1="49" x2="220" y2="76" transform="rotate(78 220 205)"></line>
+              <line x1="220" y1="55" x2="220" y2="74" transform="rotate(92 220 205)"></line>
+              <line x1="220" y1="49" x2="220" y2="76" transform="rotate(106 220 205)"></line>
+              <line x1="220" y1="55" x2="220" y2="74" transform="rotate(120 220 205)"></line>
+            </g>
+
+            <g class="dial-labels">
+              <text x="92" y="238">-2</text>
+              <text x="127" y="142">0</text>
+              <text x="215" y="91">EV</text>
+              <text x="302" y="142">4</text>
+              <text x="337" y="238">6</text>
+              <text x="186" y="163" class="dial-small">ISO 160</text>
+              <text x="169" y="281" class="dial-value">f/5.6</text>
+              <text x="235" y="281" class="dial-value">1/250</text>
+            </g>
+
+            <line class="meter-needle" x1="220" y1="205" x2="302" y2="113"></line>
+            <circle class="needle-hub-outer" cx="220" cy="205" r="23"></circle>
+            <circle class="needle-hub" cx="220" cy="205" r="12"></circle>
+          </svg>
+          <div class="meter-readout" aria-hidden="true">
+            <span>EV 12.7</span>
+            <span>CAL 0.0</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Built for the field</p>
+          <h2>Focused tools for manual exposure.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Live reflected metering</h3>
+            <p>Evaluate the scene through the iPhone camera and translate light into practical exposure settings.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Built for film cameras</h3>
+            <p>Designed around shutter speeds, apertures, ISO, and the slower rhythm of manual photography.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Private by design</h3>
+            <p>No account, no analytics SDK, no tracking, and no uploaded camera frames.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Analog-inspired interface</h3>
+            <p>Dark graphite surfaces, warm scale markings, and muted red accents echo mechanical meters.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section" aria-labelledby="support-privacy-title">
+        <div>
+          <p class="eyebrow">Support and privacy</p>
+          <h2 id="support-privacy-title">Everything App Store visitors need.</h2>
+        </div>
+        <div class="link-panel-grid">
+          <a class="link-panel" href="support.html">
+            <span>Support</span>
+            <strong>Help, FAQs, and contact details in English, Ukrainian, and Russian.</strong>
+          </a>
+          <a class="link-panel" href="privacy.html">
+            <span>Privacy</span>
+            <strong>Plain-language policy for a private, on-device light meter.</strong>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <p>© 2026 Bogdan Lyashenko. Meter One.</p>
+      <nav aria-label="Footer navigation">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="#contact" data-email-link data-email-label="address">Contact</a>
+      </nav>
+    </footer>
+  </body>
+</html>
