@@ -1,5 +1,5 @@
 // Replace this placeholder to update every contact link and visible email address site-wide.
-const CONTACT_EMAIL = "your@email.com";
+const CONTACT_EMAIL = "meteronesupport@gmail.com";
 
 document.documentElement.classList.add("js-enabled");
 
