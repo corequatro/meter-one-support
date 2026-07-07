@@ -34,6 +34,7 @@ function activateLanguage(root, language) {
 function setupLanguageSwitchers() {
   document.querySelectorAll("[data-language-switcher]").forEach((switcher) => {
     const buttons = switcher.querySelectorAll("[data-lang-button]");
+    const requestedLanguage = getRequestedLanguage();
 
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
@@ -41,8 +42,17 @@ function setupLanguageSwitchers() {
       });
     });
 
-    activateLanguage(switcher, "en");
+    activateLanguage(switcher, requestedLanguage);
   });
+}
+
+function getRequestedLanguage() {
+  const language = new URLSearchParams(window.location.search).get("lang");
+  const aliases = { ua: "uk" };
+  const normalizedLanguage = aliases[language] || language;
+  const supportedLanguages = ["en", "uk", "ru"];
+
+  return supportedLanguages.includes(normalizedLanguage) ? normalizedLanguage : "en";
 }
 
 applyContactEmail();
